@@ -1,0 +1,15 @@
+function AddGame(v)
+	local GameNames = {"Prison life"}
+	local Games = {155615604}
+	local GotGame = nil
+	for i,v1 in pairs(Games) do
+		if v1 == v then
+			GotGame = GameNames[i]
+		end
+	end
+	return GotGame
+end
+local a = AddGame(game.PlaceId)
+local Got = nil
+wait(.4)
+return a
